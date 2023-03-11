@@ -4,6 +4,7 @@ import './App.css';
 import ContextText from './components/ContextText/ContextText.tsx'  
 import ReducerTest from './components/ReducerTest/ReducerTest.tsx';
 import UseFormTest from './components/UseFormTest/UseFormTest.tsx';
+import UseFormTest2 from './components/UseFormTest/UseFormTest2.tsx';
 import RefExample from './tests/RefExample.tsx';
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       {/* <ReducerTest>
 
       </ReducerTest> */}
-      <UseFormTest></UseFormTest>
+      {/* <UseFormTest></UseFormTest> */}
+      <UseFormTest2/>
       {/* <ContextText/>
       <RefExample/>
       <p>test</p>

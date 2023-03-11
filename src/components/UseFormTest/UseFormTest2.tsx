@@ -1,9 +1,20 @@
+//@ts-nocheck
 import React,{FormEvent, useState} from 'react'
+import useForm from '../../hooks/useForm.ts'
 
-function UseFormTest(){
+interface LoginForm {
+    userName: string,
+    password: string
+}
 
-    const [username, setUsername] = useState('a')
-    const [password, setPassword] = useState('*')
+const initialState: LoginForm = {
+    username:'',
+    password:''
+}
+
+function UseFormTest2(){
+
+    const [{username, password}, handleChange] = useForm(initialState)
     const [submitted, setSubmitted] = useState(false)
 
     const login = (e: FormEvent<HTMLFormElement>) =>{
@@ -18,14 +29,14 @@ function UseFormTest(){
             type='text'
             name='username'
             value={username}
-            onChange={(e)=>setUsername(e.target.value)}
+            onChange={ handleChange }
             /> 
             <label>Password</label>
             <input 
             type='text'
             name='password'
             value={password}
-            onChange={(e)=>setPassword(e.target.value)}
+            onChange={ handleChange }
             /> 
             <input type='submit' value='Login'></input>
             {submitted && <h4>Submitted: {username} - {password}</h4>}
@@ -33,4 +44,4 @@ function UseFormTest(){
     )
 }
 
-export default UseFormTest
+export default UseFormTest2
