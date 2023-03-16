@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 //import Hello from './components/Hello/Hello.tsx';
-import ContextText from './components/ContextText/ContextText.tsx'  
-import ReducerTest from './components/ReducerTest/ReducerTest.tsx';
-import UseFormTest from './components/UseFormTest/UseFormTest.tsx';
-import UseFormTest2 from './components/UseFormTest/UseFormTest2.tsx';
+//import ContextText from './components/ContextText/ContextText.tsx'  
+//import ReducerTest from './components/ReducerTest/ReducerTest.tsx';
+//import UseFormTest from './components/UseFormTest/UseFormTest.tsx';
+//import UseFormTest2 from './components/UseFormTest/UseFormTest2.tsx';
+import UseFormTest3 from './components/UseFormTest/UseFormTest3.tsx';
 import RefExample from './tests/RefExample.tsx';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
 
       </ReducerTest> */}
       {/* <UseFormTest></UseFormTest> */}
-      <UseFormTest2/>
+      <UseFormTest3/>
       {/* <ContextText/>
       <RefExample/>
       <p>test</p>
