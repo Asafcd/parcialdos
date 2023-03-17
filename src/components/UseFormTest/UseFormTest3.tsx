@@ -11,12 +11,7 @@ interface EmployeeForm {
     role: number
 }
 
-interface LoginForm {
-    userName: string,
-    password: string
-}
-
-const initialState: LoginForm = {
+const initialState: EmployeeForm = {
     username: '',
     fullname: '',
     description: '',
