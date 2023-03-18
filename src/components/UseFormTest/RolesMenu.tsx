@@ -1,14 +1,12 @@
 //@ts-nocheck
-import React, { FormEvent, useState } from 'react'
-import { ChangeEventHandler } from 'react'
-import useForm from '../../hooks/useForm.ts'
+import React, {  useContext } from 'react'
 
-interface IRolesMenu {
-    role: number,
-    handleChange: ChangeEventHandler<HTMLInputElement>
-}
+import { EmployeeContext, EmployeeContextData } from '../../import/employeeContext.ts'
 
-function RolesMenu({role, handleChange}: IRolesMenu) {
+
+function RolesMenu() {
+
+    const {data:{role}, handleChange} = useContext<EmployeeContextData>(EmployeeContext)
     return(
         <div>
             <label>Roles</label>
