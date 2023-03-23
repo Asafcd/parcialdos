@@ -21,8 +21,6 @@ export interface EmployeeContextData {
     data: EmployeeForm
 }
 
-
-
 export const EmployeeContext = createContext<EmployeeForm>(employeeInitialState)
 
 
