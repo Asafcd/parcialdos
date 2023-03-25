@@ -16,10 +16,10 @@ export const employeeInitialState: EmployeeForm = {
     role: 1
 }
 
-export interface EmployeeContextData {
+/* export interface EmployeeContextData {
     handleChange: ChangeEventHandler<HTMLInputElement> | null,
     data: EmployeeForm
-}
+} */
 
 export const EmployeeContext = createContext<EmployeeForm>(employeeInitialState)
 

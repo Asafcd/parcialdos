@@ -4,7 +4,7 @@ import React, {  useContext } from 'react'
 import { EmployeeContext, EmployeeContextData } from '../../import/employeeContext.ts'
 
 
-function RolesMenu() {
+function PositionMenu() {
 
     const {data:{role}, handleChange} = useContext<EmployeeContextData>(EmployeeContext)
     return(
@@ -41,4 +41,4 @@ function RolesMenu() {
     )
 }
 
-export default RolesMenu
+export default PositionMenu
